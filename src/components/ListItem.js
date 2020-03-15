@@ -8,22 +8,18 @@ class ListItem extends Component {
     return (  
       <li
       key={`list-${key + 1}`}
-      className="cal list-group-item"
+      className=" list-group-item"
     >
-          <span
-          style={{ 
-            left: "3rem",
-            right: "5rem",
-            lineHeight: "62px",
-            display: "block",
-            position: "absolute", 
-          }}
-        >
-         
+    <span  
+    >
         {cal.result}   
         </span>
+         
         </li>
     );
   }
 }
+
+
+
 export default connect(null, {})(ListItem);

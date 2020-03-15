@@ -35,7 +35,7 @@ class List extends Component {
     const { formValue} = this.state;
      
       return ( 
-          <form onSubmit={this.formSubmit}> 
+          <form onSubmit={this.formSubmit} style={{ marginBottom: '20px' }}> 
               <input 
                 value={formValue}
                 onChange={this.inputChange}
@@ -71,14 +71,10 @@ class List extends Component {
       <div className="App">
         <div className="container-fluid">
           <div className="row">
-            <header
-              style={{ margin: "20px 0 40px 0" }}
-              className="App-header col col-12"
-            >
-              <h1>React cal App</h1>
-            </header>
-
-            <main className="col-12">
+          <header style={{ margin: '20px 0 40px 0' }} className="App-header col col-12">
+          <h1>React Calculator</h1>
+        </header>
+            <main className="col col-12">
             {this.renderForm()}
             <ul className="list-groups" style={{ padding: 0 }}>
             {this.renderCal()} 
